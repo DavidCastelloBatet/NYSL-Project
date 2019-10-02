@@ -284,18 +284,23 @@ thead{
 th, td{ 
     padding: 7px;
 }
+
 .filaSombra td{    
     background-color: #b7f7e1;
 }
+
 .filaSombra1 td{   
     background-color: #d6f5b9;
 }
+
 .filaSombra2 td{   
     background-color: #e3f39e;
 }
+
 tbody tr:hover{
     color: rgb(235, 151, 151);
 }
+
 .bold{  
     font-weight: bold;
 }
@@ -309,15 +314,12 @@ columna para setiembre*/
     width: 150px;
     text-align: center;
 }
-.september td:nth-child(2){   
-    width: 215px;
-}
-.september td:nth-child(3){   
-    width: 215px;
-}
+.september td:nth-child(2), 
+.september td:nth-child(3), 
 .september td:nth-child(4){   
     width: 215px;
 }
+
 
 /*anchos y alinear texto en
 columna para octubre*/
