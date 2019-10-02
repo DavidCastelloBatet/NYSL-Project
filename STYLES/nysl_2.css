@@ -1,0 +1,110 @@
+
+*{  
+    margin: 0px;
+    padding: 0px;
+}
+/*Formato del header y de la navegacion*/
+
+h1{
+    padding: 10px;
+    font-size: 60px;
+}
+
+header{    
+    background-image: url("../IMAGES/design2_image1.jpg");
+    background-repeat: no-repeat;
+    background-position-y: 75px;
+    background-size: cover;
+    height: 340px;
+    width: 100%;
+}
+nav{    
+    position: absolute;
+    top: 55px;
+    right: 120px;
+}
+.naveg li{
+    display: inline;
+    font-size: 25px;
+    list-style: none;
+    text-align: center;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    color: black;
+    background-color: rgb(0, 110, 255);
+    padding: 5px;
+    border: 1px black solid;
+    box-shadow: 2px 2px 2px 1px black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+/*Posicionamiento y formato h2*/
+h2{ 
+    height: 50px;
+    width: 99,9%;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;  
+}
+/*Posicionamiento y formato main*/
+img.logoBall{
+    position: absolute;
+    top: 430px;
+    left: 50px;
+    width: 200px; height: 200px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+section{    
+    display: inline-block;
+    padding-top: 40px;
+    padding-left: 100px;
+    width: 75%;
+    height: 300px;;
+    text-align: left;
+    margin-left: 230px;
+}
+
+
+/*especifico para section pagina home*/
+
+.event h3{  
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.event p{   
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+/*especifico para section pagina about*/
+.about h3{  
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.about p{   
+    padding-left: 15px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    text-align: left;
+}
+/*especifico para section pagina contact*/
+
+.mailTo p{    
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.naveg .active {
+    background-color: green;
+}

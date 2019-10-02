@@ -1,0 +1,27 @@
+
+table{
+    background-color: antiquewhite;
+    border-collapse: separate;
+    padding: 5px;
+    width: auto;
+    border-color: rgb(60, 145, 117);
+    border-style: solid;
+    margin-left: 200px;
+}
+
+th{ 
+    font-size:22px;
+    background-color: rgb(233, 231, 97);
+}
+td{ 
+    padding: 10px;
+    background-color: rgb(197, 235, 173);
+    font-size: 16px;
+}
+table td + td{ /* selecciona la segunda columna */ 
+
+    font-size: 19px;
+    font-weight: bold;
+    
+}
+

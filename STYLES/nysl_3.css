@@ -1,0 +1,483 @@
+/*Caracteristicas generales*/
+*{  
+    margin: 0px;
+    padding: 0px;
+}
+p{  
+    font-family: 'Sans Serif';
+    font-size: 20px;
+}
+h1,h2,h3 {  
+    font-family: 'Roboto Slab';
+}
+
+/*Posicionamiento y aspecto del header y compos*/
+header{ 
+    height: 280px;
+    background-image: url("../IMAGES/cropped-website_header.jpg");
+}
+img.logoBall{
+    padding-top: 15px;
+    width: 100px; 
+    display:block;
+    margin:auto;
+}
+
+/*Especifico para h1*/
+h1{    
+    text-align: center;
+    font-size: 60px;
+    padding-top: 15px;
+    color: white;
+}
+/**********************/
+
+/*Pone la primera letra verde al h1*/
+.firstLet{ 
+    color: #71bf3d;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 70px;
+}
+/********************/
+
+/*Navegacion general*/
+nav ul {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 5px;
+}
+nav li:first-child { 
+    margin-left: 0;
+}
+nav li a {  
+    background: #8acce4; 
+    border: 1px solid #777; 
+    display: block;
+    color: #444;
+    font-weight: bold;
+    text-decoration: none; 
+    line-height: 40px;
+    padding: 0 10px;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.1);
+    border-radius: 4px;
+}
+nav a:hover {
+    background: #363636;
+    color: #5fa9c5;
+    border: 1px solid #5fa9c5;
+}
+.active {
+    background: #5d81c4;
+    color: black;
+    border: 1px solid #5fa9c5;
+}
+/*-------------------------*/
+
+/*Main*/
+
+body{
+    background-image: radial-gradient(rgb(176, 241, 211), rgb(218, 240, 156), #b3dceb);
+}
+h2{     
+    height: 30px;
+    border: 1px solid #777;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+    background-color: antiquewhite;
+}
+aside{    
+    display: inline-block;
+    padding-top: 30px;
+    padding-left: 50px; /* ull lligat amb linea 124*/
+    padding-bottom: 30px;
+    width: 25%;
+    height: auto;
+}
+
+/*flip en pagina rules.html para 
+intranavegacion pagina*/
+.flip-card {
+    background-color: transparent;
+    width: 260px;
+    height: 380px;
+    perspective: 1000px;
+    margin-left: O; /* lligat amb linea 110 */
+  }
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+.menuNavRules li{    
+    list-style: none;
+    text-decoration: none;
+    padding: 4px;
+}
+.menuNavRules a{  
+    text-decoration: none;
+    color: darkgreen;
+}
+li p a{   
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 18px;
+}
+.flip-card-back {
+    background-color: #ccec91;
+    color: black;
+    transform: rotateY(180deg);
+    font-size: 15px;
+}
+  /* ------------------*/
+
+/*le pone bordes a las imagenes*/
+img{    
+    border: 3px solid #4b894b;
+}
+/**************************/
+
+/*Le quita el borde al logo
+ para anular css de img el anterior*/
+header img{
+    border: none;
+}
+/**************************/
+
+section{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 30px;
+    padding-left: 30px;
+    width: 65%;
+    height: auto;
+    text-align: left;
+    padding-bottom: 30px; 
+}
+.events{    
+    height: 420px;
+}
+.aboutUs{
+    height: 420px;
+}
+.sendMail{
+    height: 420px;
+}
+
+/*reglas especificas para section rules.html*/
+.rulesH3 {
+    padding-top: 40px;
+    padding-bottom: 15px;
+}   
+.quitar{    
+    list-style-type: none;
+}
+.cuadrado{  
+    list-style-type: square;
+}
+.circulo{   
+    list-style-type: circle;
+}
+.letrita{   
+    list-style-type: lower-latin;
+}
+.rules p{ 
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.fifaRules{ 
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+.rules ul{  
+    padding-left: 40px;
+}
+.rules ol{  
+    padding-left: 40px;
+}
+.boldRules{ 
+    font-weight: bold;
+}
+
+.quitar p{
+    padding-bottom: 10px;
+}
+
+/*****************************/
+/*formato general para h3*/
+h3{ 
+    color: #4b894b;
+    font-style: italic;
+}
+
+/*Especifico para contact.html*/
+.mailTo{    
+    font-size: 20px;
+}
+.noSub{ 
+    text-decoration: none;
+}
+/*********************************/
+
+/*Footer*/
+footer{
+    height: 50px;
+    border: 1px solid #777;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-image: url("../IMAGES/cropped-website_header.jpg");
+}
+/*reglas especificas para section game_info.html*/
+.fallSchedule{ 
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.allSaturday{   
+    text-decoration: underline; 
+    margin-bottom: 20px;
+}
+
+/*---reglas especificas para tablas---*/
+table{
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+thead{  
+    font-size: 25px;
+}
+th, td{ 
+    padding: 7px;
+}
+.filaSombra td{    
+    background-color: #b7f7e1;
+}
+.filaSombra1 td{   
+    background-color: #d6f5b9;
+}
+.filaSombra2 td{   
+    background-color: #e3f39e;
+}
+tbody tr:hover{
+    color: rgb(235, 151, 151);
+}
+.bold{  
+    font-weight: bold;
+}
+.marge{ 
+    margin-bottom: 20px;
+}
+
+/*anchos y alinear texto en 
+columna para setiembre*/
+.september td:nth-child(1){   
+    width: 150px;
+    text-align: center;
+}
+.september td:nth-child(2){   
+    width: 215px;
+}
+.september td:nth-child(3){   
+    width: 215px;
+}
+.september td:nth-child(4){   
+    width: 215px;
+}
+
+/*anchos y alinear texto en
+columna para octubre*/
+.october td:nth-child(1){   
+    width: 150px;
+    text-align: center;
+}
+.october td:nth-child(2){   
+    width: 215px;
+}
+.october td:nth-child(3){   
+    width: 215px;
+}
+.october td:nth-child(4){   
+    width: 215px;
+}
+
+/*anchos de columna para octubre*/
+.gameLocations td:nth-child(1){   
+    width: 415px;
+}
+.gameLocations td:nth-child(2){   
+    width: 415px;
+}
+
+/*Reglas especificas para mapas*/
+.escola{ 
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;  
+}
+iframe{
+    border: 2px solid #4b894b;
+    width: 400px;
+    height: 300px; 
+}
+.nomEscola {    
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-align: center;
+}
+.letraNombreCole{ 
+    color: #4b894b;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium';
+}
+input{
+    background-color: rgba(147, 221, 191, 0.274);
+    padding: 2px;
+}
+
+/********************/
+/*especifico para form.html con flexbox!!*/
+.anyH3{ 
+    background-color: rgba(179, 187, 151, 0.185);
+    margin: 5px;
+}
+.aspectP{   
+    color: #336e33;
+}
+.generalbox{
+    background-color: rgb(186, 236, 188);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.formFirst, .formSecond, 
+.formThird, .submit{
+    padding:15px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formThird{
+    font-size: 18px;
+}
+.formFirst{
+    display: flex;
+}
+fieldset{   
+    border: 2px solid white;
+    background-color: #d5e9c7;
+}
+label{  
+    font-weight: bold;
+}
+
+/*primera agrupacion*/
+.nameLastName, .adress,
+.formEnd{
+    display: flex; 
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-between;
+}
+.formEnd{   
+    justify-content: space-around;
+}
+.personalData, .parentTutor{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.parentTutor{   
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*segunda agrupacion*/
+.schools, .position{
+    display: flex; 
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+}
+.position{  
+    display: flex; 
+    flex-direction: column;   
+}
+.positionNormal, .positionWanted{   
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.uniform1, .uniform2{
+    display: flex; 
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+}
+.uniform2{
+    display: flex; 
+    justify-content: space-around;
+}
+input:hover {
+    background: #c1e6f5;
+}
+.formThird, .formSecond{
+    padding: 15px;
+}
+.textT{
+    padding: 2px;
+    font-size: 15px;
+}
+input[type=submit] {
+    width: 80px;
+    height: 50px;
+    padding:5px 15px; 
+    background:rgb(82, 171, 212); 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
